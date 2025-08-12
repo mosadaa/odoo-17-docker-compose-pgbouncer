@@ -33,7 +33,7 @@ $ sudo chmod -R 777 etc
 $ sudo chmod -R 777 postgresql
 ```
 
-- If you want to start the server with a different port, change **10018** to another value in **docker-compose.yml** inside the parent dir:
+- If you want to start the server with a different port, change **10017** to another value in **docker-compose.yml** inside the parent dir:
 
 ```
 ports:
