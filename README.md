@@ -12,7 +12,7 @@ and/or run the following to set up another Odoo instance @ `localhost:11017` (de
 
 ``` bash
 cd /opt
-curl -s https://raw.githubusercontent.com/HaithamSaqr/odoo-17-docker-compose-pgbouncer/master/run.sh | sudo bash -s odoo17 11017 21017
+curl -s https://raw.githubusercontent.com/mosadaa/odoo-17-docker-compose-pgbouncer/master/run.sh | sudo bash -s odoo17 11017 21017
 ```
 
  to use casa os 
