@@ -19,7 +19,7 @@ curl -s https://raw.githubusercontent.com/HaithamSaqr/odoo-17-docker-compose-pgb
 
 run 
 
-git clone --depth=1 https://github.com/HaithamSaqr/odoo-17-docker-compose-pgbouncer odoo17
+git clone --depth=1 https://github.com/mosadaa/odoo-17-docker-compose-pgbouncer odoo17
 
 then inport   casaos-compose.yml  to casa
 
