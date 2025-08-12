@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   db:
-    image: postgres:17
+    image: postgres:16
     shm_size: "2g"
     deploy:
       resources:
@@ -12,7 +12,7 @@ services:
           memory: 6G
     environment:
       POSTGRES_USER: odoo
-      POSTGRES_PASSWORD: odoo18@2024
+      POSTGRES_PASSWORD: odoo17@2024
       POSTGRES_DB: postgres
     restart: always
     volumes:
@@ -23,8 +23,8 @@ services:
       timeout: 5s
       retries: 5
 
-  odoo18:
-    image: odoo:18
+  odoo17:
+    image: odoo:17
     shm_size: "2g"
     deploy:
       resources:
@@ -38,14 +38,14 @@ services:
       redis:
         condition: service_healthy
     ports:
-      - "10018:8069"
-      - "20018:8072"
+      - "10017:8069"
+      - "20017:8072"
     tty: true
     command: odoo
     environment:
       HOST: pgbouncer
       USER: odoo
-      PASSWORD: odoo18@2024
+      PASSWORD: odoo17@2024
       REDIS_URL: redis://redis:6379/0
     volumes:
       - ./addons:/mnt/extra-addons
@@ -63,7 +63,7 @@ services:
           memory: 256M
     environment:
       DB_HOST: db
-      DATABASES: "odoo=host=db port=5432 dbname=postgres user=odoo password=odoo18@2024"
+      DATABASES: "odoo=host=db port=5432 dbname=postgres user=odoo password=odoo17@2024"
       AUTH_FILE: "/etc/pgbouncer/userlist.txt"
       POOL_MODE: "session"
       MAX_CLIENT_CONN: "100"
