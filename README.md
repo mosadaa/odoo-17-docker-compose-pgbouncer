@@ -1,25 +1,25 @@
-# Installing Odoo 18.0 with one command (Supports multiple Odoo instances on one server).
+# Installing Odoo 17.0 with one command (Supports multiple Odoo instances on one server).
 
 ## Quick Installation
 
-Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) yourself, then run the following to set up first Odoo instance @ `localhost:10018` (default master password: `P@ss@123`):
+Install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/) yourself, then run the following to set up first Odoo instance @ `localhost:10017` (default master password: `P@ss@123`):
 
 ``` bash
 cd /opt
-curl -s https://raw.githubusercontent.com/HaithamSaqr/odoo-18-docker-compose-pgbouncer/master/run.sh | sudo bash -s odoo18 10018 20018
+curl -s https://raw.githubusercontent.com/HaithamSaqr/odoo-17-docker-compose-pgbouncer/master/run.sh | sudo bash -s odoo17 10017 20017
 ```
-and/or run the following to set up another Odoo instance @ `localhost:11018` (default master password: `P@ss@123`):
+and/or run the following to set up another Odoo instance @ `localhost:11017` (default master password: `P@ss@123`):
 
 ``` bash
 cd /opt
-curl -s https://raw.githubusercontent.com/HaithamSaqr/odoo-18-docker-compose-pgbouncer/master/run.sh | sudo bash -s odoo18 11018 21018
+curl -s https://raw.githubusercontent.com/HaithamSaqr/odoo-17-docker-compose-pgbouncer/master/run.sh | sudo bash -s odoo17 11017 21017
 ```
 
  to use casa os 
 
 run 
 
-git clone --depth=1 https://github.com/HaithamSaqr/odoo-18-docker-compose-pgbouncer odoo18
+git clone --depth=1 https://github.com/HaithamSaqr/odoo-17-docker-compose-pgbouncer odoo17
 
 then inport   casaos-compose.yml  to casa
 
@@ -37,6 +37,6 @@ $ sudo chmod -R 777 postgresql
 
 ```
 ports:
- - "10018:8069"
+ - "10017:8069"
 ```
  
